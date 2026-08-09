@@ -1,0 +1,6 @@
+{
+  "name": "the-offer-goes-to-school",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "build": "node build.mjs" }
+}
