@@ -3,28 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f1eee5" />
-  <meta name="description" content="An inquiry into the architecture of exchange—across theory, cases, experiments and research." />
-  <title>The Offer Goes to School</title>
+  <meta name="theme-color" content="#f3f0e8" />
+  <meta name="description" content="An independent research school for offer theory, real-world cases, practical tools and the design of credible exchanges." />
+  <title>The Offer Goes to School — Research & Applied Learning</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The Offer Goes to School" />
+  <meta property="og:description" content="Theory. Cases. Working tools. An inquiry into the architecture of exchange." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/studio.css" />
 </head>
 <body>
+  <a class="skip-link" href="#app">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="/" data-link><span class="brand-mark">O→S</span><span>The Offer<br>Goes to School</span></a>
-    <button class="menu-button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <button class="menu-button" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">Menu</button>
     <nav id="nav" aria-label="Main navigation">
-      <a href="/theory" data-link>Theory</a><a href="/autopsies/method" data-link>Autopsies</a><a href="/#laboratory" data-link>Laboratory</a><a href="/professions/law/regulated-offer-convergence" data-link>Professions</a><a href="/#markets" data-link>Markets</a><a href="/theory/offer-power" data-link>Power & Society</a><a href="/#notebook" data-link>Notebook</a><a href="/research" data-link>Research Agenda</a>
+      <a href="/theory" data-link>Theory</a>
+      <a href="/autopsies/method" data-link>Offer Autopsies</a>
+      <a href="/research" data-link>Research</a>
+      <a href="/workbench" data-link>Workbench</a>
+      <a href="/about" data-link>About</a>
+      <a href="/library" data-link class="nav-accent">Product Library ↗</a>
     </nav>
   </header>
   <main id="app" tabindex="-1"></main>
   <footer>
     <div><span class="brand-mark">O→S</span><p>An independent inquiry into the architecture of exchange.</p></div>
-    <div class="footer-links"><a href="/manifesto" data-link>Manifesto</a><a href="/research" data-link>Research Agenda</a><a href="/about" data-link>About</a></div>
-    <p class="copyright">The theory is unfinished by design. <span id="year"></span></p>
+    <div class="footer-links"><a href="/manifesto" data-link>Manifesto</a><a href="/theory" data-link>Theory</a><a href="/workbench" data-link>Workbench</a><a href="/library" data-link>Products</a><a href="/about" data-link>About</a></div>
+    <p class="copyright">Independent research. Transparent product status. An unfinished theory by design. © <span id="year"></span></p>
   </footer>
   <script type="module" src="/app.js"></script>
+  <style>.skip-link{position:absolute;left:12px;top:-80px;z-index:100;padding:12px;background:#24221e;color:#fff}.skip-link:focus{top:8px}</style>
 </body>
 </html>

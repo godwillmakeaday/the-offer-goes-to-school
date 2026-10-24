@@ -19,3 +19,23 @@ npm run build
 ```
 
 The deployable output is generated in `dist/`.
+
+
+## Applied School redesign — October 2026
+
+The publication now has a research-led, editable **product library** at `/library` and a functional **workbench** at `/workbench`. The commercial architecture is data-driven in `studio.js` (catalogue entries, category filters, detail pages and states). Editorial visual treatments are in `studio.css`.
+
+### Current release status
+- **Available:** Offer Canvas and Price & Margin Calculator, both entirely in-browser and free to use. The calculator is a scenario tool, not professional financial advice.
+- **In development:** all other catalogue items. These are product specifications, **not purchasable inventory**. Do not attach a checkout or state a product is on sale until its deliverable, price, terms, fulfilment and support have been verified.
+- **No payment integration or customer-data collection** is part of this redesign.
+
+### Follow-up release gates
+1. User-test tools on mobile and desktop, including keyboard/screen-reader navigation.
+2. Add meaningful downloadable deliverables, support terms, refund rules and payment integration only to products that actually exist.
+3. Prioritise the catalogue via interviews and measured demand; avoid conflating planned items with commercial inventory.
+4. Add page-level meta/SSR or static route generation if organic search indexing becomes critical; this remains a JavaScript-rendered SPA.
+
+### Build and architecture
+
+Run `npm run build`. Vercel serves `dist/` and rewrites dynamic routes to `index.html`. There are no external application dependencies, no hidden accounts, and no backend.
